@@ -1,0 +1,22 @@
+更多精品资源下载地址
+www.zy40.cn
+
+
+服务器系统：win 宝塔
+
+亲测环境：阿帕奇 + PHP5.6 + Mysql5.5 + redis
+
+PHP扩展安装：redis + readline + recode
+
+运行目录：/public
+
+
+
+数据库配置文件：/config/database.php
+
+后台地址：/manage
+后台账号：admin
+后台密码：需要重置
+
+前台账号：15555555556
+前台密码：15555555556
