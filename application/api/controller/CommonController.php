@@ -318,7 +318,7 @@ class CommonController extends BaseController{
 
 		
 		
-		$data['info']['link']		=	['http://194.233.78.222','http://194.233.78.222','http://194.233.78.222'];
+		$data['info']['link']		=	['https://lotus98.com','https://lotus98.com','https://lotus98.com'];
 
 		return json($data);
 	}
