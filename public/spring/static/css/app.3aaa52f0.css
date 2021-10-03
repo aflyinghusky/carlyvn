@@ -224,7 +224,7 @@ img {
   background-color: #880a25;
 }
 .Main .van-picker__confirm {
-  color: #4087f1;
+  color: #fff;
 }
 .Main .van-picker__mask {
   background-image: linear-gradient(180deg, rgba(21, 29, 49, 0.9), rgba(21, 29, 49, 0.4)), linear-gradient(0deg, rgba(21, 29, 49, 0.9), rgba(21, 29, 49, 0.4));

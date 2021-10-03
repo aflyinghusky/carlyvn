@@ -10814,69 +10814,69 @@
           var i = n("2b0e"),
               r = n("1128"),
               o = {
-                  name: "姓名",
-                  tel: "电话",
-                  save: "保存",
-                  confirm: "确认",
-                  cancel: "取消",
-                  delete: "删除",
-                  complete: "完成",
-                  loading: "Đang tải...",
-                  telEmpty: "请填写电话",
-                  nameEmpty: "请填写姓名",
-                  nameInvalid: "请输入正确的姓名",
-                  confirmDelete: "确定要删除吗",
-                  telInvalid: "请输入正确的手机号",
-                  vanCalendar: {
-                      end: "结束",
-                      start: "开始",
-                      title: "日期选择",
-                      confirm: "确定",
-                      startEnd: "开始/结束",
-                      weekdays: ["日", "一", "二", "三", "四", "五", "六"],
-                      monthTitle: function (t, e) {
-                          return t + "年" + e + "月";
+                      name: "name",
+                      tel: "Tel",
+                      save: "Lưu",
+                      confirm: "Xác nhận",
+                      cancel: "Huỷ bỏ",
+                      delete: "Xoá",
+                      complete: "Hoàn thành",
+                      loading: "Đang Tải...",
+                      telEmpty: "请填写电话",
+                      nameEmpty: "Tên rỗng",
+                      nameInvalid: "Tên không hợp lệ",
+                      confirmDelete: "Xác nhận xoá",
+                      telInvalid: "Tel không hợp lệ",
+                      vanCalendar: {
+                          end: "Kết thúc",
+                          start: "Bắt đầu",
+                          title: "Tiêu đề",
+                          confirm: "Xác nhận",
+                          startEnd: "Bắt đầu/Kết thúc",
+                          weekdays: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
+                          monthTitle: function (t, e) {
+                              return t + "/" + e;
+                          },
+                          rangePrompt: function (t) {
+                              return "Chọn không quá " + t + " ngày";
+                          },
                       },
-                      rangePrompt: function (t) {
-                          return "选择天数不能超过 " + t + " 天";
+                      vanContactCard: { addText: "Thêm địa chỉ liên hệ" },
+                      vanContactList: { addText: "Thêm địa chỉ liên hệ" },
+                      vanPagination: { prev: "Về trước", next: "Kế tiếp" },
+                      vanPullRefresh: { pulling: "Cuộn xuống để làm mới......", loosing: "Tải lại trang để làm mới..." },
+                      vanSubmitBar: { label: "Tổng cộng：" },
+                      vanCoupon: {
+                          unlimited: "Không giới hạn",
+                          discount: function (t) {
+                              return t + "% OFF";
+                          },
+                          condition: function (t) {
+                              return "Ít nhất" + t;
+                          },
                       },
-                  },
-                  vanContactCard: { addText: "添加联系人" },
-                  vanContactList: { addText: "新建联系人" },
-                  vanPagination: { prev: "上一页", next: "下一页" },
-                  vanPullRefresh: { pulling: "下拉即可刷新...", loosing: "释放即可刷新..." },
-                  vanSubmitBar: { label: "合计：" },
-                  vanCoupon: {
-                      unlimited: "无使用门槛",
-                      discount: function (t) {
-                          return t + "折";
+                      vanCouponCell: {
+                          title: "Coupon",
+                          tips: "No Coupons",
+                          count: function (t) {
+                              return "Bạn có " + t;
+                          },
                       },
-                      condition: function (t) {
-                          return "满" + t + "元可用";
+                     vanCouponList: { empty: "No coupons", exchange: "Exchange", close: "Close", enable: "Available", disabled: "Unavailable", placeholder: "Coupon code" },
+                      vanAddressEdit: {
+                          area: "Area",
+                          postal: "Postal",
+                          areaEmpty: "Please select a receiving area",
+                          addressEmpty: "Address can not be empty",
+                          postalEmpty: "Wrong postal code",
+                          defaultAddress: "Set as the default address",
+                          telPlaceholder: "Phone",
+                          namePlaceholder: "Name",
+                          areaPlaceholder: "Area",
                       },
-                  },
-                  vanCouponCell: {
-                      title: "优惠券",
-                      tips: "暂无可用",
-                      count: function (t) {
-                          return t + "张可用";
-                      },
-                  },
-                  vanCouponList: { empty: "暂无优惠券", exchange: "兑换", close: "不使用优惠券", enable: "可用", disabled: "不可用", placeholder: "请输入优惠码" },
-                  vanAddressEdit: {
-                      area: "地区",
-                      postal: "邮政编码",
-                      areaEmpty: "请选择地区",
-                      addressEmpty: "请填写详细地址",
-                      postalEmpty: "邮政编码格式不正确",
-                      defaultAddress: "设为默认收货地址",
-                      telPlaceholder: "收货人手机号",
-                      namePlaceholder: "收货人姓名",
-                      areaPlaceholder: "选择省 / 市 / 区",
-                  },
-                  vanAddressEditDetail: { label: "详细地址", placeholder: "街道门牌、楼层房间号等信息" },
-                  vanAddressList: { add: "新增地址" },
-              },
+                      vanAddressEditDetail: { label: "Address", placeholder: "Address" },
+                      vanAddressList: { add: "Add new address" },
+                    },
               s = i["a"].prototype,
               a = i["a"].util.defineReactive;
           a(s, "$vantLang", "zh-CN"), a(s, "$vantMessages", { "zh-CN": o });
@@ -14824,64 +14824,64 @@
               tel: "Tel",
               save: "Lưu",
               confirm: "Xác nhận",
-              cancel: "Huỷ",
+              cancel: "Huỷ bỏ",
               delete: "Xoá",
               complete: "Hoàn thành",
               loading: "Đang Tải...",
               telEmpty: "请填写电话",
-              nameEmpty: "请填写姓名",
-              nameInvalid: "请输入正确的姓名",
-              confirmDelete: "确定要删除吗",
-              telInvalid: "请输入正确的手机号",
+              nameEmpty: "Tên rỗng",
+              nameInvalid: "Tên không hợp lệ",
+              confirmDelete: "Xác nhận xoá",
+              telInvalid: "Tel không hợp lệ",
               vanCalendar: {
-                  end: "结束",
-                  start: "开始",
-                  title: "日期选择",
-                  confirm: "确定",
-                  startEnd: "开始/结束",
-                  weekdays: ["日", "一", "二", "三", "四", "五", "六"],
+                  end: "Kết thúc",
+                  start: "Bắt đầu",
+                  title: "Tiêu đề",
+                  confirm: "Xác nhận",
+                  startEnd: "Bắt đầu/Kết thúc",
+                  weekdays: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
                   monthTitle: function (t, e) {
-                      return t + "年" + e + "月";
+                      return t + "/" + e;
                   },
                   rangePrompt: function (t) {
-                      return "选择天数不能超过 " + t + " 天";
+                      return "Chọn không quá " + t + " ngày";
                   },
               },
-              vanContactCard: { addText: "添加联系人" },
-              vanContactList: { addText: "新建联系人" },
-              vanPagination: { prev: "上一页", next: "下一页" },
-              vanPullRefresh: { pulling: "下拉即可刷新...", loosing: "释放即可刷新..." },
-              vanSubmitBar: { label: "合计：" },
+              vanContactCard: { addText: "Thêm địa chỉ liên hệ" },
+              vanContactList: { addText: "Thêm địa chỉ liên hệ" },
+              vanPagination: { prev: "Về trước", next: "Kế tiếp" },
+              vanPullRefresh: { pulling: "Cuộn xuống để làm mới......", loosing: "Tải lại trang để làm mới..." },
+              vanSubmitBar: { label: "Tổng cộng：" },
               vanCoupon: {
-                  unlimited: "无使用门槛",
+                  unlimited: "Không giới hạn",
                   discount: function (t) {
-                      return t + "折";
+                      return t + "% OFF";
                   },
                   condition: function (t) {
-                      return "满" + t + "元可用";
+                      return "Ít nhất" + t;
                   },
               },
               vanCouponCell: {
-                  title: "优惠券",
-                  tips: "暂无可用",
+                  title: "Coupon",
+                  tips: "No Coupons",
                   count: function (t) {
-                      return t + "张可用";
+                      return "Bạn có " + t;
                   },
               },
-              vanCouponList: { empty: "暂无优惠券", exchange: "兑换", close: "不使用优惠券", enable: "可用", disabled: "不可用", placeholder: "请输入优惠码" },
+             vanCouponList: { empty: "No coupons", exchange: "Exchange", close: "Close", enable: "Available", disabled: "Unavailable", placeholder: "Coupon code" },
               vanAddressEdit: {
-                  area: "地区",
-                  postal: "邮政编码",
-                  areaEmpty: "请选择地区",
-                  addressEmpty: "请填写详细地址",
-                  postalEmpty: "邮政编码格式不正确",
-                  defaultAddress: "设为默认收货地址",
-                  telPlaceholder: "收货人手机号",
-                  namePlaceholder: "收货人姓名",
-                  areaPlaceholder: "选择省 / 市 / 区",
+                  area: "Area",
+                  postal: "Postal",
+                  areaEmpty: "Please select a receiving area",
+                  addressEmpty: "Address can not be empty",
+                  postalEmpty: "Wrong postal code",
+                  defaultAddress: "Set as the default address",
+                  telPlaceholder: "Phone",
+                  namePlaceholder: "Name",
+                  areaPlaceholder: "Area",
               },
-              vanAddressEditDetail: { label: "详细地址", placeholder: "街道门牌、楼层房间号等信息" },
-              vanAddressList: { add: "新增地址" },
+              vanAddressEditDetail: { label: "Address", placeholder: "Address" },
+              vanAddressList: { add: "Add new address" },
           };
           e.default = i;
       },

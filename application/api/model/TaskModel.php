@@ -226,7 +226,7 @@ class TaskModel extends Model
 		$link_info	=	(input('post.link_info')) ? input('post.link_info') : '';	// 链接信息
 		if(!$link_info){
 			$data['code'] = 0;
-			if($lang=='cn') $data['code_dec']	= '链接信息错误';
+			if(判断服务器是有该文件) $data['code_dec']	= '链接信息错误';
 			elseif($lang=='en') $data['code_dec']				= 'Link information error !';
 			elseif($lang=='id') $data['code_dec']				= 'Galat informasi hubungan';
 			elseif($lang=='ft') $data['code_dec']				= '連結資訊錯誤';
@@ -1788,8 +1788,9 @@ class TaskModel extends Model
 		}
 
 		foreach($examine_demo as $key2 => $value2){
-			if(!file_exists('/www/wwwroot/application/api/model/public'.$value2)){//判断服务器是有该文件
-				if($lang=='vi'){
+			if(!file_exists('/www/wwwroot/public'.$value2)){//判断服务器是有该文件
+			    echo "<script>console.log(".$value2.")</>script>";
+				if($lang=='cn'){
 					return ['code' => 0, 'code_dec' => '失败5'];
 				}elseif($lang=='en'){
 						return ['code' => 0, 'code_dec' => 'Fail'];
