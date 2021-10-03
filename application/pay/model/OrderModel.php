@@ -986,7 +986,7 @@ class OrderModel extends Model{
 		}*/
 
 		$orderip = request()->ip();//客户端IP
-		$orderinfo1 = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','2,3')->where('ordertimes','>',match_msectime()-60*60*1000)->order('ordertimes','desc')->find();//同商户同ip最新已完成订单
+		$orderinfo1 = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','2,3')->where('ordertimes','>',match_msectime()-60*60*1000)->order('ordertimes','desc')->find();//同商户同ip最新Chi tiết订单
 		if ($orderinfo1) {
 			$ordercount = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','4,7')->where('ordertimes','>',$orderinfo1['ordertimes'])->count();//同商户同ip同ip最新已抢单未完成订单数
 			if ($ordercount >= 3) {
@@ -1301,7 +1301,7 @@ class OrderModel extends Model{
 			}
 		}elseif ($clienttype == 2) {
 			$orderip = request()->ip();//客户端IP
-			$orderinfo1 = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','2,3')->where('ordertimes','>',match_msectime()-30*60*1000)->order('ordertimes','desc')->find();//同商户同ip最新已完成订单
+			$orderinfo1 = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','2,3')->where('ordertimes','>',match_msectime()-30*60*1000)->order('ordertimes','desc')->find();//同商户同ip最新Chi tiết订单
 			if ($orderinfo1) {
 				$ordercount = $this->where('mid','=',$merchantdata['id'])->where('orderip','=',$orderip)->where('uid','>',0)->whereIn('status','4,7')->where('ordertimes','>',$orderinfo1['ordertimes'])->count();//同商户同ip同ip最新已抢单未完成订单数
 				if ($ordercount >= 3) {

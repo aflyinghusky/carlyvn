@@ -1,4 +1,4 @@
-input, select, textarea{
+input, select {
   color: #fff!important;
 }
 .MiLineBtn[data-v-3dd50f76] {
@@ -4075,7 +4075,7 @@ i {
   font-size: 24px;
 }
 .van-tabbar-item__icon img[data-v-11df6033] {
-  height: 24px;
+  height: 28px;
 }
 .van-tabbar-item__icon .addTask[data-v-11df6033] {
   height: 72px;

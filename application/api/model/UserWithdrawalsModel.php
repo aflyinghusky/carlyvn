@@ -214,7 +214,7 @@ class UserWithdrawalsModel extends model
 				}elseif($lang=='yd'){
 				    $data['code_yd']	= 'गलत राजधानी पासवर्ड';
 				}elseif($lang=='vi'){
-				    $data['code_vi']	= 'Mật khẩu vốn sai';
+				    $data['code_vi']	= 'Sai mật khẩu ví';
 				}elseif($lang=='es'){
 				    $data['code_es']	= 'Código de fondos equivocado.';
 				}elseif($lang=='ja'){
