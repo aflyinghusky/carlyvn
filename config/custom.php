@@ -128,7 +128,7 @@ return [
 		'发布任务',	//3 task
 		'平台抽水',	//4 pump
 		'下级返点',	//5 rebate
-		'完成任务',	//6 commission
+		'Hoàn thành nhiệm vụ',	//6 commission
 		'注册奖励',	//7 regment
 		'推广奖励',	//8 spread
 		'购买会员',	//9 buymembers
@@ -163,7 +163,7 @@ return [
 	//充值状态
 	'rechargeStatus'	=>	[
 		'全部',			// 0
-		'已完成',		// 1
+		'Chi tiết',		// 1
 		'失败',		// 2
 		'待付款',		// 3
 		'已关闭',		// 4

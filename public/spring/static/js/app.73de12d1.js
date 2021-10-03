@@ -329,9 +329,9 @@
                     common: ["在线客服", "取消悬浮"],
                     home: {
                         broadcast: "恭喜会员{member}推荐一名{vipname}<br>获得IDR{grade}推广奖励!",
-                        taskHall: { title: ["任务大厅", "商家发布大厅"] },
+                        taskHall: { title: ["任务大厅", "商家Thêm mới大厅"] },
                         memberList: { title: "会员榜单", data: ["恭喜:{member}", "今天完成{num}单,赚取IDR{profit}!"] },
-                        businessList: { title: "商家榜单", data: ["{member}", "今天发布{num}单任务"] },
+                        businessList: { title: "商家榜单", data: ["{member}", "今天Thêm mới{num}单任务"] },
                         noticeTitle: "温馨Thông báo",
                         tabBar: ["首页", "任务", "VIP", "收益", "我的"],
                         menu: ["VIP专区", "视频教程", "推广奖励"],
@@ -345,7 +345,7 @@
                         i18n: ["已有账号？{a} {line}", "登录"],
                     },
                     postTask: {
-                        navBar: { title: "发布任务", right: "发布规则" },
+                        navBar: { title: "Thêm mới任务", right: "Thêm mới规则" },
                         field: [
                             { label: "任务分类" },
                             { label: "任务标题", placeholder: "请输入任务标题", error: "任务标题不能为空" },
@@ -364,7 +364,7 @@
                         button: "提交",
                         step: { title: "操作步骤", right: "完成", placeholder: "请输入步骤描述", button: ["删除", "添加"] },
                         tips: [
-                            "平台手续费约 {pump}{br}本次发布需支付约 {price}，请保证账户余额充足 {a}{br}Thông báo: 本平台禁止发布黄赌毒及涉政等一切法律所禁止的内容，如发现扣除积分，封禁账号。",
+                            "平台手续费约 {pump}{br}本次Thêm mới需支付约 {price}，请保证账户余额充足 {a}{br}Thông báo: 本平台禁止Thêm mới黄赌毒及涉政等一切法律所禁止的内容，如发现扣除积分，封禁账号。",
                             "去充值",
                             "最少保留一项步骤",
                             "最多添加十个步骤",
@@ -378,7 +378,7 @@
                     user: {
                         myEarnings: { grid: ["个人余额(IDR)", "昨日收益(IDR)", "今日收益(IDR)", "本周收益(IDR)", "本月收益(IDR)", "上月收益(IDR)", "总收益(IDR)", "今日完成任务(单)", "今日剩余任务(单)"] },
                         default: ["我的上级", "登录账号", "邀请码", "退出登录", "余额", "金币", "我的钱包", "封号", "限制", "良好", "优秀"],
-                        menu: ["任务记录", "审核任务", "发布管理", "个人信息", "账号绑定", "日结报表", "账变记录", "邀请好友", "团队报表", "帮助手册", "信用中心", "APP下载"],
+                        menu: ["任务记录", "审核任务", "Thêm mới管理", "个人信息", "账号绑定", "日结报表", "账变记录", "邀请好友", "团队报表", "帮助手册", "信用中心", "APP下载"],
                     },
                     userInfo: {
                         default: ["个人信息", "头像", "手机号", "银行卡", "支付宝", "详细信息", "登录密码", "资金密码", "点击设置", "修改头像", "修改登录密码", "修改资金密码", "提交", "清空缓存"],
@@ -1623,7 +1623,7 @@
                         taskHall: { title: ["SẢNH NHIỆM VỤ", "SẢNH PHÁT HÀNH THƯƠNG GIA"] },
                         memberList: { title: "Danh sách thành viên", data: ["Xin chúc mừng: {member}", "Đơn hàng {num} đã hoàn thành hôm nay"] },
                         businessList: { title: "Danh sách thương gia", data: ["{member}", "{num} nhiệm vụ duy nhất được phát hành ngày hôm nay"] },
-                        tabBar: ["TRANG CHỦ", "CÔNG VIỆC", "VIP", "LỢI NHUẬN", "CỦA TÔI"],
+                        tabBar: ["TRANG CHỦ", "CÔNG VIỆC", "LOTUS98", "LỢI NHUẬN", "CỦA TÔI"],
                         noticeTitle: "Thông báo mới nhất",
                         msg: "Nhiệm vụ không mở",
                         video: "Không có video hướng dẫn",
@@ -1735,7 +1735,7 @@
                         placeholder: ["Vui lòng chọn tên ngân hàng", "Vui lòng nhập số tài khoản", "Vui lòng nhập mã IFSC"],
                     },
                     wallet: {
-                        default: ["Ví của tôi", "Nạp tiền", "Rút", "Hồ sơ nạp tiền", "Hồ sơ rút tiền", "Sạc điện", "đề cập", "Alipay"],
+                        default: ["Ví của tôi", "Nạp tiền", "Rút tiền", "Lịch sử nạp tiền", "Lịch sử rút tiền", "Nạp", "Rút", "Alipay"],
                         label: ["Phương thức rút tiền", "Số tiền rút", "Mật khẩu quỹ", "Gửi đi", "số điện thoại", "hộp thư", "IFSC"],
                         placeholder: [
                             "Chọn phương thức rút tiền",
@@ -1746,7 +1746,7 @@
                             "Vui lòng nhập địa chỉ email của người nhận",
                             "Vui lòng nhập IFSC người nhận thanh toán",
                         ],
-                        msg: ["Bạn chưa đặt mật khẩu quỹ, vui lòng đặt mật khẩu trước", "Bạn chưa ràng buộc thẻ ngân hàng hoặc Alipay, vui lòng liên kết trước"],
+                        msg: ["Bạn chưa đặt mật khẩu quỹ, vui lòng đặt mật khẩu trước", "Bạn chưa thêm thẻ ngân hàng hoặc ví điện tử, vui lòng liên kết trước"],
                     },
                     recharge: {
                         default: [
@@ -1797,8 +1797,8 @@
                     },
                     task: {
                         default: ["DANH SÁCH CÔNG VIỆC", "Yêu cầu nhiệm vụ", "tạo nên", "Kiểm toán", "Mở liên kết", "sao chép đường dẫn", "đơn giá", "Gửi đi", "bỏ cuộc"],
-                        tabs: ["Chế biến", "đang xem xét", "hoàn thành", "Thất bại", "Độc hại", "Bị bỏ rơi"],
-                        msg: "Vui lòng tải lên một hình ���nh hoàn thành nhiệm vụ",
+                        tabs: ["Đang làm", "Đang xem xét", "Hoàn thành", "Thất bại", "Spam", "Huỷ bỏ"],
+                        msg: "Vui lòng tải lên một hình ảnh hoàn thành nhiệm vụ",
                         info: [
                             "Chi tiết nhiệm vụ",
                             "Tiêu đề nhiệm vụ",
@@ -1898,7 +1898,7 @@
                         "tiêu thụ",
                         "ngày",
                     ],
-                    fundRecord: { default: ["Hồ sơ chi phí", "Hồ sơ nạp tiền", "Hồ sơ thu nhập", "Phí", "Thu", "Chi"], tabs: ["thu nhập", "chi phí", "Nạp tiền"] },
+                    fundRecord: { default: ["Lịch sử chi phí", "Lịch sử nạp tiền", "Lịch sử thu nhập", "Phí", "Thu", "Chi"], tabs: ["thu nhập", "chi phí", "Nạp tiền"] },
                     promote: [
                         "Bạn của bạn",
                         "Mời bạn tham gia {title}",

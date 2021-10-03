@@ -440,7 +440,7 @@ class UsersModel extends Model{
 			elseif($lang=='id') $codeDec	= 'Login berhasil';
 			elseif($lang=='ft') $codeDec	= '登入成功';
 			elseif($lang=='yd') $codeDec	= 'लागइन सफल';
-			elseif($lang=='vi') $codeDec	= 'Thành công Đăng nhập';
+			elseif($lang=='vi') $codeDec	= 'Đăng nhập thành công';
 			elseif($lang=='es') $codeDec	= 'Acceso concedido.';
 			elseif($lang=='ja') $codeDec	= 'ログイン成功';
 			elseif($lang=='th') $codeDec	= 'เข้าสู่ระบบสำเร็จ';
@@ -570,7 +570,7 @@ class UsersModel extends Model{
 			elseif($lang=='id') $data['code_dec']	= 'nama pengguna tidak ada';
 			elseif($lang=='ft') $data['code_dec']	= '用戶名不存在';
 			elseif($lang=='yd') $data['code_dec']	= 'उपयोक्ता नाम मौजूद नहीं है';
-			elseif($lang=='vi') $data['code_dec']	= 'tên người dùng không tồn tại';
+			elseif($lang=='vi') $data['code_dec']	= 'Tên người dùng không tồn tại';
 			elseif($lang=='es') $data['code_dec']	= 'El nombre de usuario no existe';
 			elseif($lang=='ja') $data['code_dec']	= 'ユーザ名が存在しません';
 			elseif($lang=='th') $data['code_dec']	= 'ชื่อผู้ใช้';

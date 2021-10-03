@@ -1378,7 +1378,7 @@ class TaskModel extends Model
 
 		$is_u			= (input('post.is_u')) ? input('post.is_u') : 2;	// 1是自己发布的;2自己领取的
 
-		$status			= (isset($param['status']) and $param['status']) ? $param['status'] : 1;//状态。1：进行中；2：审核中；3：已完成；4：已失败;5:恶意
+		$status			= (isset($param['status']) and $param['status']) ? $param['status'] : 1;//状态。1：进行中；2：审核中；3：Chi tiết；4：已失败;5:恶意
 
 		$where = array();
 

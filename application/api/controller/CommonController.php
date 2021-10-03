@@ -305,7 +305,7 @@ class CommonController extends BaseController{
 			$BanksList[$key]['types'] =  $value['pay_type'];
 		}
 		
-		$data['info']['BanksList'] = isset($BanksList) ?: null;
+		$data['info']['BanksList'] = isset($BanksList) ? $BanksList : null;
 
 		/**
 		 * 获取幻灯片
